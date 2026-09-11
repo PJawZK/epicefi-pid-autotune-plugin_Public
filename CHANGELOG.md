@@ -2,7 +2,10 @@
 
 ## 0.5.24 — 2026-09-11
 
-Status: **PUBLIC RELEASE**\n\nRelease JAR: `pid-autotune-plugin-0.5.24.jar`  \nSHA-256: `bd2456a7581b8e601d7af4d4598ec941e107bd990f42553d5fa435bb6846d120`
+Status: **PUBLIC RELEASE**
+
+Release JAR: `pid-autotune-plugin-0.5.24.jar`  
+SHA-256: `bd2456a7581b8e601d7af4d4598ec941e107bd990f42553d5fa435bb6846d120`
 
 This is the first public PID Tuner release from the current 0.5.x controller-tuning line.
 
