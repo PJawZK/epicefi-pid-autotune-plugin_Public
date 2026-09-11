@@ -49,7 +49,7 @@ PID Tuner deliberately keeps permanent ECU changes outside automatic control:
 4. Restart TunerStudio.
 5. Confirm the plugin reports version `0.5.24`.
 
-The TunerStudio Plugin API JAR is **not** included and is not required separately for normal end-user installation.
+The TunerStudio Plugin API JAR is **not** included and is not required separately for normal end-user installation.\n\n## Release artifact\n\n**File:** `pid-autotune-plugin-0.5.24.jar`  \n**SHA-256:** `bd2456a7581b8e601d7af4d4598ec941e107bd990f42553d5fa435bb6846d120`
 
 ## Validation note
 
