@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>se.anders.tunerstudio</groupId>
+    <artifactId>pid-autotune-plugin</artifactId>
+    <version>0.5.24</version>
+    <packaging>jar</packaging>
+    <name>EPICEFI PID Autotune Plugin</name>
+    <description>PID Tuner for EpicEFI/TunerStudio with task-based Guided and audited RAM-only workflows for Idle Closed Loop and DC-IAC. No automatic Burn.</description>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.outputTimestamp>2026-09-11T06:00:00Z</project.build.outputTimestamp>
+        <maven.compiler.release>8</maven.compiler.release>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.efianalytics</groupId>
+            <artifactId>TunerStudioPluginAPI</artifactId>
+            <version>local</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/TunerStudioPluginAPI.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration><release>8</release></configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.2</version>
+                <configuration>
+                    <archive>
+                        <manifestEntries>
+                            <ApplicationPlugin>se.anders.tunerstudio.pidautotune.PidAutotunePlugin</ApplicationPlugin>
+                            <Implementation-Version>0.5.24</Implementation-Version>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
