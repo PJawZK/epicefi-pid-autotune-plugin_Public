@@ -6,7 +6,8 @@ PID Tuner is a TunerStudio plugin for guided and audited RAM-only PID tuning on 
 
 Current release: **v0.5.24**  
 Plugin: `pid-autotune-plugin-0.5.24.jar`  
-Java target: Java 8 bytecode
+Java target: Java 8 bytecode  
+SHA-256: `bd2456a7581b8e601d7af4d4598ec941e107bd990f42553d5fa435bb6846d120`
 
 PID Tuner currently focuses on two controller areas:
 
