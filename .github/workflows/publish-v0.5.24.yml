@@ -13,7 +13,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     env:
-      RC_ARTIFACT_URL: "https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-f378-8210-ae46-33001dca93dd/raw?se=2026-09-11T07%3A08%3A19Z&sp=r&sv=2026-02-06&sr=b&scid=eb323f30-cc43-5f16-8bef-0896fe751a2d&skoid=9b41a688-1b44-4731-856e-b0efcf3660ed&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-11T06%3A00%3A22Z&ske=2026-09-12T06%3A00%3A22Z&sks=b&skv=2026-02-06&sig=jGxLs/0wsFvIIdZM0q/eitfU9NfJ7oAiAxugC0oB/oU%3D"
+      RC_ARTIFACT_URL: "https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-d7ac-8210-abe1-42b24347ab5a/raw?se=2026-09-11T07%3A09%3A39Z&sp=r&sv=2026-02-06&sr=b&scid=2d51d2e1-49f1-50f5-89f9-6ba3f9063350&skoid=9b41a688-1b44-4731-856e-b0efcf3660ed&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-11T05%3A09%3A26Z&ske=2026-09-12T05%3A09%3A26Z&sks=b&skv=2026-02-06&sig=K973fjKGpD5WKO5CG0byg5LB8zb4trM9IOM1ABELeAw%3D"
       EXPECTED_SHA256: "bd2456a7581b8e601d7af4d4598ec941e107bd990f42553d5fa435bb6846d120"
     steps:
       - uses: actions/checkout@v4
